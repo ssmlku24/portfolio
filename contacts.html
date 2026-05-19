@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Контактна інформація та форма зворотного зв'язку">
-    <meta name="author" content="Олена Іванівська">
+    <meta name="author" content="Альона Чучупалова">
     <title>Контакти — Портфоліо</title>
 </head>
 <body>
     <header>
-        <h1>Олена Іванівська</h1>
+        <h1>Альона Чучупалова</h1>
         <p>Майбутній фронтенд-розробник</p>
         <nav>
             <ul>
@@ -29,54 +29,92 @@
         <section>
             <h2>Контактна інформація</h2>
             <ul>
-                <li><strong>Email:</strong> <a href="mailto:olena.ivanovska@example.com">olena.ivanovska@example.com</a></li>
-                <li><strong>Телефон:</strong> <a href="tel:+380991234567">+38 (099) 123-45-67</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/olena-ivanovska" target="_blank">linkedin.com/in/olena-ivanovska</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/olenai" target="_blank">github.com/olenai</a></li>
+                <li><strong>Email:</strong> <a href="mailto:a.s.chuchupalova@student.khai.edu">a.s.chuchupalova@student.khai.edu</a></li>
+                <li><strong>Телефон:</strong> <a href="tel:+380953386432">+38 (095) 338-64-32</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/ssmlku24" target="_blank">github.com/ssmlku24</a></li>
             </ul>
         </section>
 
         <section>
             <h2>Форма зворотного зв'язку</h2>
             <form action="#" method="post">
-<fieldset>
-<legend>Контактна інформація</legend>
-<label for="name">Ім'я:</label>
-<input type="text" id="name" name="name" placeholder="Введіть ваше і
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" placeholder="email@examp
-</fieldset>
-<fieldset>
-<legend>Повідомлення</legend>
-<label for="subject">Тема:</label>
-<select id="subject" name="subject" required>
-<option value="">-- Оберіть тему --</option>
-<option value="general">Загальне питання</option>
-<option value="cooperation">Співпраця</option>
-<option value="feedback">Відгук</option>
-</select>
-<p>Тип звернення:</p>
-<label>
-<input type="radio" name="type" value="question" required> Питан
-</label>
-<label>
-<input type="radio" name="type" value="suggestion"> Пропозиція
-</label>
-<label>
-<input type="radio" name="type" value="complaint"> Скарга
-</label>
-<label for="message">Повідомлення:</label>
-<textarea id="message" name="message" rows="5" placeholder="Ваше пов
-</fieldset>
-<label>
-<input type="checkbox" name="consent" required>
-Я погоджуюсь на обробку персональних даних
-</label>
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+                    
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
 
-11
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
 
-<button type="submit">Надіслати</button>
-</form>
+                    <label for="phone">Телефон (опціонально):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+38 (099) 123-45-67">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ваше повідомлення</legend>
+                    
+                    <label for="subject">Тема звернення:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Оберіть тему --</option>
+                        <option value="general">Загальне питання</option>
+                        <option value="cooperation">Пропозиція по співпраці</option>
+                        <option value="feedback">Відгук</option>
+                        <option value="job">Пропозиція роботи</option>
+                    </select>
+
+                    <p>Тип звернення:</p>
+                    <p>
+                    <label>
+                        <input type="radio" name="inquiry_type" value="question" required>
+                        Питання
+                    </label>
+                    <label>
+                        <input type="radio" name="inquiry_type" value="suggestion">
+                        Пропозиція
+                    </label>
+                    <label>
+                        <input type="radio" name="inquiry_type" value="compliment">
+                        Комплімент
+                    </label>
+                    <label>
+                        <input type="radio" name="inquiry_type" value="other">
+                        Інше
+                    </label>
+                </p>
+<p>
+  <table border="0" cellpadding="5" cellspacing="0">
+    <tr>
+      <!-- Левая ячейка с текстом, выровненным по центру вертикали -->
+      <td valign="middle">
+        <label for="message">Ваше повідомлення:</label>
+      </td>
+      
+      <!-- Правая ячейка с полем ввода -->
+      <td valign="middle">
+        <textarea id="message" name="message" rows="2" placeholder="Напишіть ваше повідомлення..." required></textarea>
+      </td>
+    </tr>
+  </table>
+</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Згода на обробку даних</legend>
+                    <label>
+                        <input type="checkbox" name="consent" required>
+                        Я погоджуюсь на обробку персональних даних відповідно до <a href="#">політики приватності</a>
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="newsletter">
+                        Я хочу отримувати новини та оновлення на мій email
+                    </label>
+                </fieldset>
+
+                <button type="submit">Надіслати повідомлення</button>
+                <button type="reset">Очистити форму</button>
+            </form>
         </section>
 
         <aside>
@@ -86,7 +124,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Олена Іванівська. Всі права захищені.</p>
+        <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
     </footer>
 </body>
 </html>
