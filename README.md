@@ -42,6 +42,7 @@ portfolio/
 
 - HTML5 (семантичні теги, мультимедіа, таблиці, форми)
 - CSS3 (зовнішній файл `styles.css`, селектори, Box Model, позиціонування, типографіка)
+- Адаптивна верстка (CSS Grid, Flexbox, Mobile First, media queries, CSS-змінні, анімації)
 - Google Fonts (Inter)
 - Git та GitHub (контроль версій, Conventional Commits)
 

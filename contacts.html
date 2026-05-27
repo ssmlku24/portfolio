@@ -14,125 +14,137 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <h1>Альона Чучупалова</h1>
-        <p>Майбутній фронтенд-розробник</p>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про мене</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page">
+        <header class="site-header">
+            <h1>Альона Чучупалова</h1>
+            <p>Майбутній фронтенд-розробник</p>
+        </header>
 
-    <main>
-        <section>
-            <h2>Зв'яжіться зі мною</h2>
-            <p>Якщо у вас є питання, пропозиції щодо співпраці або просто хочете поговорити про веб-розробку, я буду
-                рада почути від вас!</p>
-        </section>
+        <aside class="sidebar">
+            <nav class="nav" aria-label="Головна навігація">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Головна</a></li>
+                    <li><a class="nav-link" href="about.html">Про мене</a></li>
+                    <li><a class="nav-link" href="index.html#projects">Проєкти</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
 
-        <section>
-            <h2>Контактна інформація</h2>
-            <ul class="contact-list">
-                <li><strong>Email:</strong> <a
-                        href="mailto:a.s.chuchupalova@student.khai.edu">a.s.chuchupalova@student.khai.edu</a></li>
-                <li><strong>Телефон:</strong> <a href="tel:+380953386432">+38 (095) 338-64-32</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/ssmlku24"
-                        target="_blank">github.com/ssmlku24</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Форма зворотного зв'язку</h2>
-            <form class="contact-form" action="#" method="post">
-                <fieldset>
-                    <legend>Контактна інформація</legend>
-
-                    <label for="name">Ваше ім'я:</label>
-                    <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
-
-                    <label for="phone">Телефон (опціонально):</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+38 (099) 123-45-67">
-                </fieldset>
-
-                <fieldset>
-                    <legend>Ваше повідомлення</legend>
-
-                    <label for="subject">Тема звернення:</label>
-                    <select id="subject" name="subject" required>
-                        <option value="">-- Оберіть тему --</option>
-                        <option value="general">Загальне питання</option>
-                        <option value="cooperation">Пропозиція по співпраці</option>
-                        <option value="feedback">Відгук</option>
-                        <option value="job">Пропозиція роботи</option>
-                    </select>
-
-                    <p>Тип звернення:</p>
-                    <p>
-                        <label>
-                            <input type="radio" name="inquiry_type" value="question" required>
-                            Питання
-                        </label>
-                        <label>
-                            <input type="radio" name="inquiry_type" value="suggestion">
-                            Пропозиція
-                        </label>
-                        <label>
-                            <input type="radio" name="inquiry_type" value="compliment">
-                            Комплімент
-                        </label>
-                        <label>
-                            <input type="radio" name="inquiry_type" value="other">
-                            Інше
-                        </label>
-                    </p>
-
-                    <div class="form-message-row">
-                        <label for="message">Ваше повідомлення:</label>
-                        <textarea id="message" name="message" rows="4"
-                            placeholder="Напишіть ваше повідомлення..." required></textarea>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Згода на обробку даних</legend>
-                    <label>
-                        <input type="checkbox" name="consent" required>
-                        Я погоджуюсь на обробку персональних даних відповідно до <a href="#">політики приватності</a>
-                    </label>
-
-                    <label>
-                        <input type="checkbox" name="newsletter">
-                        Я хочу отримувати новини та оновлення на мій email
-                    </label>
-                </fieldset>
-
-                <div class="form-actions">
-                    <button type="submit">Надіслати повідомлення</button>
-                    <button type="reset">Очистити форму</button>
+            <div class="sidebar-note">
+                <h3 class="sidebar-note__title">Час відповіді</h3>
+                <div class="sidebar-note__content">
+                    <p>Я намагаюсь відповідати на всі повідомлення протягом 24-48 годин. Дякую за ваше терпіння!</p>
+                    <p>Для термінових питань краще зателефонувати за номером, вказаним у розділі контактів.</p>
                 </div>
-            </form>
-        </section>
-
-        <aside class="sidebar-note">
-            <h3 class="sidebar-note__title">Час відповіді</h3>
-            <div class="sidebar-note__content">
-                <p>Я намагаюсь відповідати на всі повідомлення протягом 24-48 годин. Дякую за ваше терпіння!</p>
-                <p>Для термінових питань краще зателефонувати за номером, вказаним у розділі контактів.</p>
             </div>
         </aside>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
-    </footer>
+        <main class="content">
+            <section class="content-section">
+                <h2>Зв'яжіться зі мною</h2>
+                <p>Якщо у вас є питання, пропозиції щодо співпраці або просто хочете поговорити про веб-розробку, я буду
+                    рада почути від вас!</p>
+            </section>
 
-    <a href="#" id="back-to-top" aria-label="Повернутися нагору">↑</a>
+            <section class="content-section">
+                <h2>Контактна інформація</h2>
+                <ul class="contact-list">
+                    <li><strong>Email:</strong> <a
+                            href="mailto:a.s.chuchupalova@student.khai.edu">a.s.chuchupalova@student.khai.edu</a></li>
+                    <li><strong>Телефон:</strong> <a href="tel:+380953386432">+38 (095) 338-64-32</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/ssmlku24"
+                            target="_blank">github.com/ssmlku24</a></li>
+                </ul>
+            </section>
+
+            <section class="content-section">
+                <h2>Форма зворотного зв'язку</h2>
+                <form class="contact-form" action="#" method="post">
+                    <fieldset>
+                        <legend>Контактна інформація</legend>
+
+                        <label for="name">Ваше ім'я:</label>
+                        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+                        <label for="phone">Телефон (опціонально):</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+38 (099) 123-45-67">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ваше повідомлення</legend>
+
+                        <label for="subject">Тема звернення:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Оберіть тему --</option>
+                            <option value="general">Загальне питання</option>
+                            <option value="cooperation">Пропозиція по співпраці</option>
+                            <option value="feedback">Відгук</option>
+                            <option value="job">Пропозиція роботи</option>
+                        </select>
+
+                        <p>Тип звернення:</p>
+                        <p>
+                            <label>
+                                <input type="radio" name="inquiry_type" value="question" required>
+                                Питання
+                            </label>
+                            <label>
+                                <input type="radio" name="inquiry_type" value="suggestion">
+                                Пропозиція
+                            </label>
+                            <label>
+                                <input type="radio" name="inquiry_type" value="compliment">
+                                Комплімент
+                            </label>
+                            <label>
+                                <input type="radio" name="inquiry_type" value="other">
+                                Інше
+                            </label>
+                        </p>
+
+                        <div class="form-message-row">
+                            <label for="message">Ваше повідомлення:</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Напишіть ваше повідомлення..." required></textarea>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Згода на обробку даних</legend>
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            Я погоджуюсь на обробку персональних даних відповідно до <a href="#">політики приватності</a>
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="newsletter">
+                            Я хочу отримувати новини та оновлення на мій email
+                        </label>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="button">Надіслати повідомлення</button>
+                        <button type="reset" class="button button--secondary">Очистити форму</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
+        </footer>
+    </div>
+
+    <a href="#" id="back-to-top" class="button button--round" aria-label="Повернутися нагору">↑</a>
 </body>
 
 </html>

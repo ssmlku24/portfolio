@@ -14,86 +14,129 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <h1>Альона Чучупалова</h1>
-        <p>Майбутня фронтенд-розробниця</p>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про мене</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page">
+        <header class="site-header">
+            <h1>Альона Чучупалова</h1>
+            <p>Майбутня фронтенд-розробниця</p>
+        </header>
 
-    <main>
-        <section id="hero">
-            <h2>Ласкаво просимо!</h2>
-            <p>Мене звуть <strong>Альона Чучупалова</strong>, і я — <em>розробниця-початківець</em> з пристрастю до
-                веб-розробки.</p>
-            <p>На цьому сайті ви зможете дізнатися про мої навички, досвід та проєкти, які я створила протягом навчання.
-            </p>
+        <aside class="sidebar">
+            <nav class="nav" aria-label="Головна навігація">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Головна</a></li>
+                    <li><a class="nav-link" href="about.html">Про мене</a></li>
+                    <li><a class="nav-link" href="index.html#projects">Проєкти</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
 
-            <blockquote>
-                <p>"Найкращий спосіб передбачити майбутнє — це його створити."</p>
-            </blockquote>
-
-            <h3>Мої ключові навички:</h3>
-            <ul class="skills-list">
-                <li>HTML5 та семантичні елементи</li>
-                <li>CSS для стилізації веб-сторінок</li>
-                <li>JavaScript для інтерактивності</li>
-                <li>Робота з Git та GitHub</li>
-                <li>Розуміння основ UX/UI дизайну</li>
-            </ul>
-
-            <h3>Мої цілі:</h3>
-            <ol>
-                <li>Оволодіти всіма основами веб-розробки</li>
-                <li>Створити портфоліо з 5+ реальних проєктів</li>
-                <li>Знайти першу роботу як фронтенд-розробник</li>
-                <li>Постійно вчитися та розвиватися</li>
-            </ol>
-        </section>
-
-        <section class="profile-section">
-            <h2>Фото профілю</h2>
-            <figure class="profile-section__figure">
-                <div class="profile-section__media">
-                    <span class="profile-section__badge">Frontend</span>
-                    <img src="images/photo1.jpg" alt="Фото Альони Чучупалової" width="300">
+            <div class="interesting-fact">
+                <h3 class="interesting-fact__title">Цікавий факт</h3>
+                <div class="interesting-fact__content">
+                    <p>Я почала вивчати веб-розробку з самого нуля на 3-му курсі університету. За кілька місяців навчання я вже
+                        створила кілька власних проєктів і готова розв'язувати реальні завдання!</p>
+                    <p>Мій улюблений стек для навчання: HTML, CSS та JavaScript. Я також активно практикую роботу з Git,
+                        Figma та сучасними інструментами розробки.</p>
                 </div>
-                <figcaption class="profile-section__caption">Альона Чучупалова — розробниця у процесі навчання</figcaption>
-            </figure>
-        </section>
-
-        <section>
-            <h2>Демонстрація відеоматеріалу</h2>
-            <figure class="card">
-                <video controls width="640">
-                    <source src="video/introduction.mp4" type="video/mp4">
-                    Ваш браузер не підтримує вбудоване відео.
-                </video>
-                <figcaption>Приклад відтворення медіафайлу на веб-сторінці</figcaption>
-            </figure>
-        </section>
-
-        <aside class="interesting-fact">
-            <h3 class="interesting-fact__title">Цікавий факт</h3>
-            <div class="interesting-fact__content">
-                <p>Я почала вивчати веб-розробку з самого нуля на 3-му курсі університету. За кілька місяців навчання я вже
-                    створила кілька власних проєктів і готова розв'язувати реальні завдання!</p>
-                <p>Мій улюблений стек для навчання: HTML, CSS та JavaScript. Я також активно практикую роботу з Git,
-                    Figma та сучасними інструментами розробки.</p>
             </div>
         </aside>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
-    </footer>
+        <main class="content">
+            <section id="hero" class="content-section">
+                <h2>Ласкаво просимо!</h2>
+                <p>Мене звуть <strong>Альона Чучупалова</strong>, і я — <em>розробниця-початківець</em> з пристрастю до
+                    веб-розробки.</p>
+                <p>На цьому сайті ви зможете дізнатися про мої навички, досвід та проєкти, які я створила протягом навчання.
+                </p>
 
-    <a href="#" id="back-to-top" aria-label="Повернутися нагору">↑</a>
+                <blockquote>
+                    <p>"Найкращий спосіб передбачити майбутнє — це його створити."</p>
+                </blockquote>
+
+                <h3>Мої ключові навички:</h3>
+                <ul class="skills-list">
+                    <li>HTML5 та семантичні елементи</li>
+                    <li>CSS для стилізації веб-сторінок</li>
+                    <li>JavaScript для інтерактивності</li>
+                    <li>Робота з Git та GitHub</li>
+                    <li>Розуміння основ UX/UI дизайну</li>
+                </ul>
+
+                <h3>Мої цілі:</h3>
+                <ol>
+                    <li>Оволодіти всіма основами веб-розробки</li>
+                    <li>Створити портфоліо з 5+ реальних проєктів</li>
+                    <li>Знайти першу роботу як фронтенд-розробник</li>
+                    <li>Постійно вчитися та розвиватися</li>
+                </ol>
+            </section>
+
+            <section id="projects" class="content-section">
+                <h2>Мої проєкти</h2>
+                <p>Під час навчання я створила кілька навчальних проєктів. Ось основні з них:</p>
+                <div class="projects-grid">
+                    <article class="project-card card">
+                        <h3 class="project-card__title">Портфоліо-сайт</h3>
+                        <p class="project-card__text">Персональний сайт з HTML, CSS та адаптивною версткою. Семантична
+                            розмітка, форми та таблиці.</p>
+                        <span class="project-card__tag">HTML / CSS</span>
+                    </article>
+                    <article class="project-card card">
+                        <h3 class="project-card__title">Landing Page</h3>
+                        <p class="project-card__text">Односторінковий лендінг з Flexbox-макетом та медіа-запитами для
+                            мобільних пристроїв.</p>
+                        <span class="project-card__tag">Flexbox</span>
+                    </article>
+                    <article class="project-card card">
+                        <h3 class="project-card__title">To-Do List</h3>
+                        <p class="project-card__text">Інтерактивний список завдань на JavaScript з локальним збереженням
+                            даних у браузері.</p>
+                        <span class="project-card__tag">JavaScript</span>
+                    </article>
+                    <article class="project-card card">
+                        <h3 class="project-card__title">UI Kit у Figma</h3>
+                        <p class="project-card__text">Набір компонентів інтерфейсу: кнопки, картки, форми та кольорова
+                            палітра для веб-проєктів.</p>
+                        <span class="project-card__tag">Figma</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section profile-section">
+                <h2>Фото профілю</h2>
+                <figure class="profile-section__figure">
+                    <div class="profile-section__media">
+                        <span class="profile-section__badge">Frontend</span>
+                        <img src="images/photo1.jpg" alt="Фото Альони Чучупалової" width="300">
+                    </div>
+                    <figcaption class="profile-section__caption">Альона Чучупалова — розробниця у процесі навчання</figcaption>
+                </figure>
+            </section>
+
+            <section class="content-section">
+                <h2>Демонстрація відеоматеріалу</h2>
+                <figure class="card">
+                    <video controls width="640">
+                        <source src="video/introduction.mp4" type="video/mp4">
+                        Ваш браузер не підтримує вбудоване відео.
+                    </video>
+                    <figcaption>Приклад відтворення медіафайлу на веб-сторінці</figcaption>
+                </figure>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
+        </footer>
+    </div>
+
+    <a href="#" id="back-to-top" class="button button--round" aria-label="Повернутися нагору">↑</a>
 </body>
 
 </html>

@@ -14,120 +14,132 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <h1>Альона Чучупалова</h1>
-        <p>Майбутній фронтенд-розробник</p>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про мене</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="page">
+        <header class="site-header">
+            <h1>Альона Чучупалова</h1>
+            <p>Майбутній фронтенд-розробник</p>
+        </header>
 
-    <main>
-        <section class="about-intro">
-            <h2>Про мене</h2>
-            <div class="about-intro__body">
-                <div class="about-intro__text">
-                    <p>Мене звуть Альона, я студентка 3-го курсу спеціальності "Інженерія програмного забезпечення" в
-                        Національному аерокосмічному університеті «Харківський авіаційний інститут». Я захоплююся веб-розробкою
-                        та постійно розвиваю свої навички у цій галузі.</p>
-                    <p>Моя мета — стати висококваліфікованим фронтенд-розробником і створювати красиві, функціональні веб-сайти
-                        та додатки, які покращують життя людей.</p>
+        <aside class="sidebar">
+            <nav class="nav" aria-label="Головна навігація">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Головна</a></li>
+                    <li><a class="nav-link" href="about.html">Про мене</a></li>
+                    <li><a class="nav-link" href="index.html#projects">Проєкти</a></li>
+                    <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="about-highlight">
+                <h3 class="about-highlight__title">Про мене цікаве</h3>
+                <div class="about-highlight__content">
+                    <p>У вільний час я люблю дослідити нові веб-технології, створювати прототипи в Figma та читати блоги про
+                        тренди в веб-розробці.</p>
+                    <p>Особливо цікавлять теми доступності (a11y), адаптивної верстки та сучасних CSS-можливостей, таких як
+                        Grid і Flexbox.</p>
                 </div>
-                <figure class="about-intro__figure">
-                    <div class="about-intro__media">
-                        <span class="about-intro__badge">Workspace</span>
-                        <img src="images/workspace.jpg" alt="Моє робоче місце" width="300">
-                    </div>
-                    <figcaption class="about-intro__caption">Так виглядає мій робочий простір, де я створюю проекти</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <section>
-            <h2>Освіта</h2>
-            <dl>
-                <dt><strong>Національний аерокосмічний університет «Харківський авіаційний інститут»</strong></dt>
-                <dd>Спеціальність: Інженерія програмного забезпечення</dd>
-                <dd>Рівень: Бакалавр, 3-й курс</dd>
-                <dd>Період: 2023 — дотепер</dd>
-
-                <dt><strong>Онлайн курси та сертифікації</strong></dt>
-                <dd>Основи веб-розробки (HTML, CSS, JavaScript)</dd>
-            </dl>
-        </section>
-
-        <section>
-            <h2>Технічні навички</h2>
-            <table class="skills-table">
-                <caption>Мої технічні навички та рівень володіння</caption>
-                <thead>
-                    <tr>
-                        <th>Технологія</th>
-                        <th>Рівень</th>
-                        <th>Досвід</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML5</td>
-                        <td>Середній</td>
-                        <td>3 місяці</td>
-                    </tr>
-                    <tr>
-                        <td>CSS3</td>
-                        <td>Початківець</td>
-                        <td>2 місяці</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Початківець</td>
-                        <td>1 місяць</td>
-                    </tr>
-                    <tr>
-                        <td>Git / GitHub</td>
-                        <td>Середній</td>
-                        <td>6 місяці</td>
-                    </tr>
-                    <tr>
-                        <td>Figma</td>
-                        <td>Середній</td>
-                        <td>6 місяців</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section>
-            <h2>Мої інтереси</h2>
-            <ul class="skills-list">
-                <li>Веб-дизайн та UX/UI</li>
-                <li>Фронтенд-розробка</li>
-                <li>Графічний дизайн</li>
-                <li>Онлайн-навчання та самовдосконалення</li>
-                <li>Читання технічних статей та блогів</li>
-            </ul>
-        </section>
-
-        <aside class="about-highlight">
-            <h3 class="about-highlight__title">Про мене цікаве</h3>
-            <div class="about-highlight__content">
-                <p>У вільний час я люблю дослідити нові веб-технології, створювати прототипи в Figma та читати блоги про
-                    тренди в веб-розробці.</p>
-                <p>Особливо цікавлять теми доступності (a11y), адаптивної верстки та сучасних CSS-можливостей, таких як
-                    Grid і Flexbox.</p>
             </div>
         </aside>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
-    </footer>
+        <main class="content">
+            <section class="content-section about-intro">
+                <h2>Про мене</h2>
+                <div class="about-intro__body">
+                    <div class="about-intro__text">
+                        <p>Мене звуть Альона, я студентка 3-го курсу спеціальності "Інженерія програмного забезпечення" в
+                            Національному аерокосмічному університеті «Харківський авіаційний інститут». Я захоплююся веб-розробкою
+                            та постійно розвиваю свої навички у цій галузі.</p>
+                        <p>Моя мета — стати висококваліфікованим фронтенд-розробником і створювати красиві, функціональні веб-сайти
+                            та додатки, які покращують життя людей.</p>
+                    </div>
+                    <figure class="about-intro__figure">
+                        <div class="about-intro__media">
+                            <span class="about-intro__badge">Workspace</span>
+                            <img src="images/workspace.jpg" alt="Моє робоче місце" width="300">
+                        </div>
+                        <figcaption class="about-intro__caption">Так виглядає мій робочий простір, де я створюю проекти</figcaption>
+                    </figure>
+                </div>
+            </section>
 
-    <a href="#" id="back-to-top" aria-label="Повернутися нагору">↑</a>
+            <section class="content-section">
+                <h2>Освіта</h2>
+                <dl>
+                    <dt><strong>Національний аерокосмічний університет «Харківський авіаційний інститут»</strong></dt>
+                    <dd>Спеціальність: Інженерія програмного забезпечення</dd>
+                    <dd>Рівень: Бакалавр, 3-й курс</dd>
+                    <dd>Період: 2023 — дотепер</dd>
+
+                    <dt><strong>Онлайн курси та сертифікації</strong></dt>
+                    <dd>Основи веб-розробки (HTML, CSS, JavaScript)</dd>
+                </dl>
+            </section>
+
+            <section class="content-section">
+                <h2>Технічні навички</h2>
+                <table class="skills-table">
+                    <caption>Мої технічні навички та рівень володіння</caption>
+                    <thead>
+                        <tr>
+                            <th>Технологія</th>
+                            <th>Рівень</th>
+                            <th>Досвід</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>Середній</td>
+                            <td>3 місяці</td>
+                        </tr>
+                        <tr>
+                            <td>CSS3</td>
+                            <td>Початківець</td>
+                            <td>2 місяці</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Початківець</td>
+                            <td>1 місяць</td>
+                        </tr>
+                        <tr>
+                            <td>Git / GitHub</td>
+                            <td>Середній</td>
+                            <td>6 місяці</td>
+                        </tr>
+                        <tr>
+                            <td>Figma</td>
+                            <td>Середній</td>
+                            <td>6 місяців</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="content-section">
+                <h2>Мої інтереси</h2>
+                <ul class="skills-list">
+                    <li>Веб-дизайн та UX/UI</li>
+                    <li>Фронтенд-розробка</li>
+                    <li>Графічний дизайн</li>
+                    <li>Онлайн-навчання та самовдосконалення</li>
+                    <li>Читання технічних статей та блогів</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
+        </footer>
+    </div>
+
+    <a href="#" id="back-to-top" class="button button--round" aria-label="Повернутися нагору">↑</a>
 </body>
 
 </html>
