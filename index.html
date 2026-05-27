@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -7,14 +7,18 @@
     <meta name="description" content="Портфоліо Альони Чучупалової - молодий фронтенд-розробник">
     <meta name="author" content="Альона Чучупалова">
     <title>Головна — Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
+    <header class="site-header">
         <h1>Альона Чучупалова</h1>
-        <p>Майбутня фронтенд-розробниця </p>
+        <p>Майбутня фронтенд-розробниця</p>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="index.html">Головна</a></li>
                 <li><a href="about.html">Про мене</a></li>
                 <li><a href="contacts.html">Контакти</a></li>
@@ -23,7 +27,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="hero">
             <h2>Ласкаво просимо!</h2>
             <p>Мене звуть <strong>Альона Чучупалова</strong>, і я — <em>розробниця-початківець</em> з пристрастю до
                 веб-розробки.</p>
@@ -35,7 +39,7 @@
             </blockquote>
 
             <h3>Мої ключові навички:</h3>
-            <ul>
+            <ul class="skills-list">
                 <li>HTML5 та семантичні елементи</li>
                 <li>CSS для стилізації веб-сторінок</li>
                 <li>JavaScript для інтерактивності</li>
@@ -52,17 +56,20 @@
             </ol>
         </section>
 
-        <section>
+        <section class="profile-section">
             <h2>Фото профілю</h2>
-            <figure>
-                <img src="images/photo1.jpg" alt="Фото Альони Чучупалової" width="300">
-                <figcaption>Альона Чучупалова — розробниця у процесі навчання</figcaption>
+            <figure class="profile-section__figure">
+                <div class="profile-section__media">
+                    <span class="profile-section__badge">Frontend</span>
+                    <img src="images/photo1.jpg" alt="Фото Альони Чучупалової" width="300">
+                </div>
+                <figcaption class="profile-section__caption">Альона Чучупалова — розробниця у процесі навчання</figcaption>
             </figure>
         </section>
 
         <section>
             <h2>Демонстрація відеоматеріалу</h2>
-            <figure>
+            <figure class="card">
                 <video controls width="640">
                     <source src="video/introduction.mp4" type="video/mp4">
                     Ваш браузер не підтримує вбудоване відео.
@@ -71,16 +78,22 @@
             </figure>
         </section>
 
-        <aside>
-            <h3>Цікавий факт</h3>
-            <p>Я почала вивчати веб-розробку з самого нуля на 3-му курсі університету. За кілька місяців навчання я вже
-                створила кілька власних проєктів і готова розв'язувати реальні завдання!</p>
+        <aside class="interesting-fact">
+            <h3 class="interesting-fact__title">Цікавий факт</h3>
+            <div class="interesting-fact__content">
+                <p>Я почала вивчати веб-розробку з самого нуля на 3-му курсі університету. За кілька місяців навчання я вже
+                    створила кілька власних проєктів і готова розв'язувати реальні завдання!</p>
+                <p>Мій улюблений стек для навчання: HTML, CSS та JavaScript. Я також активно практикую роботу з Git,
+                    Figma та сучасними інструментами розробки.</p>
+            </div>
         </aside>
     </main>
 
     <footer>
         <p>&copy; 2026 Альона Чучупалова. Всі права захищені.</p>
     </footer>
+
+    <a href="#" id="back-to-top" aria-label="Повернутися нагору">↑</a>
 </body>
 
 </html>
