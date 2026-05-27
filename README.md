@@ -11,7 +11,9 @@ portfolio/
 ├── index.html          # Головна сторінка
 ├── about.html          # Сторінка "Про мене"
 ├── contacts.html       # Сторінка контактів
-├── styles.css          # Зовнішні стилі (Лаб. 2)
+├── styles.css          # Зовнішні стилі (Лаб. 2–3)
+├── script.js           # JavaScript (Лаб. 4)
+├── javascript.html     # Сторінка лаб. роботи 4 (JS)
 ├── images/             # Папка з зображеннями
 ├── video/              # Папка з відео
 ```
@@ -43,6 +45,7 @@ portfolio/
 - HTML5 (семантичні теги, мультимедіа, таблиці, форми)
 - CSS3 (зовнішній файл `styles.css`, селектори, Box Model, позиціонування, типографіка)
 - Адаптивна верстка (CSS Grid, Flexbox, Mobile First, media queries, CSS-змінні, анімації)
+- JavaScript (змінні, функції, масиви, обʼєкти, ланцюжки методів)
 - Google Fonts (Inter)
 - Git та GitHub (контроль версій, Conventional Commits)
 
